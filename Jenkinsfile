@@ -1,9 +1,8 @@
 pipeline {
-    agent any 
-    tools {
-        Maven 'maven-3.9.1' 
-    
-    }
+  agent any
+  tools {
+    maven 'maven-3.6.3' 
+  }
 //     environment {
 //     MAVEN_HOME = tool name: 'maven-3.9.1', type: 'hudson.plugins.groovy.GroovyInstallation'
 //     }
