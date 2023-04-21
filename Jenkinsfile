@@ -1,9 +1,12 @@
 pipeline {
     agent any 
     tools {
-        'maven "3.9.1"'
+        maven 'maven-3.9.1' 
     
     }
+//     environment {
+//     MAVEN_HOME = tool name: 'maven-3.9.1', type: 'hudson.plugins.groovy.GroovyInstallation'
+//     }
     stages {
         stage('Compile and Clean') { 
             steps {
